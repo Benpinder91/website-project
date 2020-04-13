@@ -1,12 +1,33 @@
  ul{
+     
     list-style-type: none;
+    /* 4-5 Flips the text vertical and side ways down page*/
     writing-mode: vertical-rl;
-    text-orientation: mixed; 
+    text-orientation: mixed;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+
+   
+    flex-flow: row nowrap;
+    justify-content: center;
+    
+    background-color: antiquewhite;
+   
     
 }
 
 li {
     margin: 1vw 0;
+    background-color: aquamarine;
+    flex: 0 0 auto;
 }
+
+li:nth-child(1){
+    margin-right:auto;
+}
+/* used to order list items - wanted to be used specifcally for nav need to find method of targeting single element
+li:nth-child(odd){
+    order:1;
+}*/
+
+a {text-decoration:none;} 
