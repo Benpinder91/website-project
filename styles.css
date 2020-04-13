@@ -1,4 +1,12 @@
  ul{
     list-style-type: none;
-    display:block;
+    writing-mode: vertical-rl;
+    text-orientation: mixed; 
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+li {
+    margin: 1vw 0;
 }
