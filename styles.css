@@ -1,13 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+margin:0;
+} 
+nav{
+    position: fixed;/*fixes teh nav bar to the position on the page - will move down with scrol*/
+    top: 0; /* fixes nav bar to top of the page*/
+    left: 0; /* fixes nav bar to left of the page*/
+    width: 100px;
+    height: 100%;
+    background-color: aquamarine;
+    display: flex; /* make the nav a flex box*/
+    flex-direction: column; /* makes the content of the box flow vertically*/
+    justify-content: center; /*aligns the content of the box to the center*/
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding:5px 10px;
+}
+
+nav a:hover{
+color: blue;
+}
+
+main {
+    margin-left: 100px;
+    padding:10px;
+}
+/*
  ul{
      
     list-style-type: none;
-    /* 4-5 Flips the text vertical and side ways down page*/
+    /* 4-5 Flips the text vertical and side ways down page
     writing-mode: vertical-rl;
     text-orientation: mixed;
     display: flex;
     flex-wrap: nowrap;
+    position: relative;
 
-   
+
     flex-flow: row nowrap;
     justify-content: center;
     
