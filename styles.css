@@ -2,9 +2,11 @@
     box-sizing: border-box;
 }
 
+
 body{
 margin:0;
 } 
+
 nav{
     position: fixed;/*fixes teh nav bar to the position on the page - will move down with scrol*/
     top: 0; /* fixes nav bar to top of the page*/
@@ -14,9 +16,13 @@ nav{
     padding-top: 25%;
     
     display: flex; /* make the nav a flex box*/
+    flex: 0 0 40px;
     flex-direction: column; /* makes the content of the box flow vertically*/
-    justify-content: center; /*aligns the content of the box to the center*/
+    justify-content: space-around; /*aligns the content of the box to the center*/
+    align-items: center;
 }
+
+
 
 nav a {
     display: inline-block;
@@ -35,6 +41,47 @@ main {
     margin-left: 100px;
     padding:10px;
 }
+
+
+
+
+/*this this the css for area containing information about the equipment for hire*/
+
+#music-equip {
+display: flex;
+position: relative;
+flex-direction: column;
+
+    background-color: coral;
+}
+.container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding-top: 50px;
+}
+
+.equip-details {
+    display: flex;
+}
+
+.equip-img { 
+    width: 300px;
+    padding-left: 5%;
+}
+
+.equip-description {
+    flex: 1 1 auto;
+    display:flex;
+    flex-direction: column;
+    padding-left: 10%;
+   
+}
+
+
+
+/*footer styles*/
 
 footer {
     position: relative;
