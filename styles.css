@@ -62,22 +62,6 @@ flex-direction: column;
     padding-top: 50px;
 }
 
-.container-two {
-    display: flex;
-    position: relative;
-    flex-direction: column-reverse;
-    flex: 1 1 auto;
-    padding-top: 50px;
-}
-
-.equip-img2 {
-    width: 300px;
-    padding-right: 5%;
-    order:2;
-}
-
-
-
 .equip-details {
     display: flex;
 }
@@ -95,6 +79,20 @@ flex-direction: column;
    
 }
 
+/*styles for container 2*/
+.container-two {
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse;
+    flex: 1 1 auto;
+    padding-top: 50px;
+}
+
+.equip-img2 {
+    width: 300px;
+    padding-right: 5%;
+    order:2;
+}
 
 
 /*footer styles*/
