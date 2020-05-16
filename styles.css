@@ -42,28 +42,35 @@ main {
     padding:10px;
 }
 
-
+h1{
+    margin: 0 auto;
+}
 
 
 /*this this the css for area containing information about the equipment for hire*/
 
+/*flex containers must have a display set to flex*/
+
+/*this is the flex container for the entire page*/
 #music-equip {
 display: flex;
 position: relative;
 flex-direction: column;
-
-    background-color: coral;
+background-color: coral;
 }
+
+/*This is the flex container for content slots 1 and 3 - however this is not needed as the div container holding the flex items is set to inline flex - which makes then appear in line as desired 
 .container {
     display: flex;
     position: relative;
     flex-direction: column;
     flex: 1 1 auto;
-    padding-top: 50px;
 }
+*/
 
 .equip-details {
-    display: flex;
+    display: inline-flex;
+    padding-top: 50px;
 }
 
 .equip-img { 
