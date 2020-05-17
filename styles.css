@@ -47,9 +47,7 @@ h1{
 }
 
 
-/*this this the css for area containing information about the equipment for hire*/
-
-/*flex containers must have a display set to flex*/
+/*main*/
 
 /*this is the flex container for the entire page*/
 #music-equip {
@@ -59,42 +57,22 @@ flex-direction: column;
 background-color: coral;
 }
 
-/*This is the flex container for content slots 1 and 3 - however this is not needed as the div container holding the flex items is set to inline flex - which makes then appear in line as desired 
-.container {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    flex: 1 1 auto;
-}
-*/
 
+/*flex container hold all the equipment content (flex-items)*/
 .equip-details {
-    display: inline-flex;
+     display: inline-flex;
     padding-top: 50px;
+    
 }
 
+/*flex item*/
 .equip-img { 
     width: 300px;
     padding-left: 5%;
 }
 
-.equip-description {
-    flex: 1 1 auto;
-    display:flex;
-    flex-direction: column;
-    padding-left: 10%;
-   
-}
 
-/*styles for container 2*/
-.container-two {
-    display: flex;
-    position: relative;
-    flex-direction: column-reverse;
-    flex: 1 1 auto;
-    padding-top: 50px;
-}
-
+/*flex item*/
 .equip-img2 {
     width: 300px;
     padding-right: 5%;
@@ -102,8 +80,9 @@ background-color: coral;
 }
 
 
-/*footer styles*/
 
+
+/*footer styles*/
 footer {
     position: relative;
     bottom:0;
@@ -114,6 +93,18 @@ footer {
     justify-content: center;
     background-color: blueviolet;
 }
+
+a {text-decoration:none;} 
+
+
+
+
+
+
+
+
+
+
 /* these styles from old nav attempt use some settings when sorting out the design
  ul{
      
@@ -147,5 +138,3 @@ li:nth-child(1){
 li:nth-child(odd){
     order:1;
 }*/
-
-a {text-decoration:none;} 
